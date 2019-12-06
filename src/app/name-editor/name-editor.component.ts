@@ -10,6 +10,7 @@ export class NameEditorComponent {
   name = new FormControl('');
 
   updateName() {
+    // FormControl 提供了一个 setValue() 方法，它会修改这个表单控件的值，并且验证与控件结构相对应的值的结构
     this.name.setValue('Nancy');
   }
 }
